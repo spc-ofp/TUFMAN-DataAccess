@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4127EC93-9CCC-4DD0-B694-407B94BEA6A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TUFMAN_DataAccess</RootNamespace>
+    <AssemblyName>TUFMAN-DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\Maps\Log\CatchgnMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchhlMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchllMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchplMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchpsMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchrnMap.cs" />
+    <Compile Include="DAL\Maps\Log\CatchtrMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetsgnMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetshlMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetsllMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetsplMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetspsMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetsrnMap.cs" />
+    <Compile Include="DAL\Maps\Log\SetstrMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripsgnMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripshlMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripsllMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripsplMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripspsMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripsrnMap.cs" />
+    <Compile Include="DAL\Maps\Log\TripstrMap.cs" />
+    <Compile Include="DAL\Maps\Log\UnloadspsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesGnMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesHlMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesLlMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesPlMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesPsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ActivitycodesRnMap.cs" />
+    <Compile Include="DAL\Maps\Ref\AgreementOwnershipMap.cs" />
+    <Compile Include="DAL\Maps\Ref\AgreementTypesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\CountriesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\FieldStaffMap.cs" />
+    <Compile Include="DAL\Maps\Ref\FieldStaffTypeMap.cs" />
+    <Compile Include="DAL\Maps\Ref\GearsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\LicenseStatusMap.cs" />
+    <Compile Include="DAL\Maps\Ref\LicenseTypesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\ObserverTypesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\PortsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\SchoolCodesPsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\SpeciesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\SpeciesRangesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\TelexCodesMap.cs" />
+    <Compile Include="DAL\Maps\Ref\VesselActivitiesMap.cs" />
+    <Compile Include="DAL\Maps\Ves\VesselActAnnualMap.cs" />
+    <Compile Include="DAL\Maps\Ves\VesselCategoriesMap.cs" />
+    <Compile Include="DAL\Maps\Ves\VesselHistoryMap.cs" />
+    <Compile Include="DAL\Maps\Ves\VesselsMap.cs" />
+    <Compile Include="Domain\Log\Catchgn.cs" />
+    <Compile Include="Domain\Log\Catchhl.cs" />
+    <Compile Include="Domain\Log\Catchll.cs" />
+    <Compile Include="Domain\Log\Catchpl.cs" />
+    <Compile Include="Domain\Log\Catchps.cs" />
+    <Compile Include="Domain\Log\Catchrn.cs" />
+    <Compile Include="Domain\Log\Catchtr.cs" />
+    <Compile Include="Domain\Log\Setsgn.cs" />
+    <Compile Include="Domain\Log\Setshl.cs" />
+    <Compile Include="Domain\Log\Setsll.cs" />
+    <Compile Include="Domain\Log\Setspl.cs" />
+    <Compile Include="Domain\Log\Setsps.cs" />
+    <Compile Include="Domain\Log\Setsrn.cs" />
+    <Compile Include="Domain\Log\Setstr.cs" />
+    <Compile Include="Domain\Log\Tripsgn.cs" />
+    <Compile Include="Domain\Log\Tripshl.cs" />
+    <Compile Include="Domain\Log\Tripsll.cs" />
+    <Compile Include="Domain\Log\Tripspl.cs" />
+    <Compile Include="Domain\Log\Tripsps.cs" />
+    <Compile Include="Domain\Log\Tripsrn.cs" />
+    <Compile Include="Domain\Log\Tripstr.cs" />
+    <Compile Include="Domain\Log\Unloadsps.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesGn.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesHl.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesLl.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesPl.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesPs.cs" />
+    <Compile Include="Domain\Ref\ActivitycodesRn.cs" />
+    <Compile Include="Domain\Ref\AgreementOwnership.cs" />
+    <Compile Include="Domain\Ref\AgreementTypes.cs" />
+    <Compile Include="Domain\Ref\Countries.cs" />
+    <Compile Include="Domain\Ref\FieldStaff.cs" />
+    <Compile Include="Domain\Ref\FieldStaffType.cs" />
+    <Compile Include="Domain\Ref\Gears.cs" />
+    <Compile Include="Domain\Ref\LicenseStatus.cs" />
+    <Compile Include="Domain\Ref\LicenseTypes.cs" />
+    <Compile Include="Domain\Ref\ObserverTypes.cs" />
+    <Compile Include="Domain\Ref\Ports.cs" />
+    <Compile Include="Domain\Ref\SchoolCodesPs.cs" />
+    <Compile Include="Domain\Ref\Species.cs" />
+    <Compile Include="Domain\Ref\SpeciesRanges.cs" />
+    <Compile Include="Domain\Ref\TelexCodes.cs" />
+    <Compile Include="Domain\Ref\VesselActivities.cs" />
+    <Compile Include="Domain\Ves\VesselActAnnual.cs" />
+    <Compile Include="Domain\Ves\VesselCategories.cs" />
+    <Compile Include="Domain\Ves\VesselHistory.cs" />
+    <Compile Include="Domain\Ves\Vessels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

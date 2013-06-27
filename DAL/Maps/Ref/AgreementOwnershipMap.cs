@@ -1,0 +1,20 @@
+using System; 
+using System.Collections.Generic; 
+using System.Text; 
+using FluentNHibernate.Mapping;
+using TUFMAN.Domain.Ref; 
+
+namespace TUFMAN.DAL.Maps.Ref {
+    
+    
+    public class AgreementOwnershipMap : ClassMap<AgreementOwnership> {
+        
+        public AgreementOwnershipMap() {
+            Schema("ref");
+			Table("agreement_ownership");
+			Id(x => x.agr_own_id).GeneratedBy.Identity().Column("agr_own_id");
+			Map(x => x.agr_own_desc).Column("agr_own_desc").Length(50);
+			Map(x => x.agr_own_longdesc).Column("agr_own_longdesc").Length(100);
+        }
+    }
+}

@@ -16,7 +16,8 @@ namespace TUFMAN.DAL.Maps.Log {
 			References(x => x.trips_llVal).Column("recon_trip_id");
 			References(x => x.vessels).Column("vessel_id");
 			Map(x => x.license_id).Column("license_id").Precision(10);
-			Map(x => x.unload_id).Column("unload_id").Precision(10);
+            Map(x => x.vessel_id).Column("vessel_id").Precision(10);
+            Map(x => x.unload_id).Column("unload_id").Precision(10);
 			Map(x => x.vess_act_id).Column("vess_act_id").Precision(10);
 			Map(x => x.sample_id).Column("sample_id").Precision(10);
 			Map(x => x.flag_code).Column("flag_code").Length(20);

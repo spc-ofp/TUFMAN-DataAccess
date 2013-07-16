@@ -6,11 +6,11 @@ using System.Collections.Generic;
 namespace TUFMAN.Domain.Ref {
     
     public class Ports {
-        public int port_id { get; set; }
-        public string port_name { get; set; }
-        public string country_code { get; set; }
-        public string location_code { get; set; }
-        public string port_lat { get; set; }
-        public string port_lon { get; set; }
+        public virtual int port_id { get; set; }
+        public virtual string port_name { get; set; }
+        public virtual string country_code { get; set; }
+        public virtual string location_code { get; set; }
+        public virtual string port_lat { get; set; }
+        public virtual string port_lon { get; set; }
     }
 }

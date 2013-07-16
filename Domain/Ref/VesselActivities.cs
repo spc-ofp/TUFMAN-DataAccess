@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace TUFMAN.Domain.Ref {
     
     public class VesselActivities {
-        public int activitylog_id { get; set; }
-        public string activity { get; set; }
+        public virtual int activitylog_id { get; set; }
+        public virtual string activity { get; set; }
     }
 }

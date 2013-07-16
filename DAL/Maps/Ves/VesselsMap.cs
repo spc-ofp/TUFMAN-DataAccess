@@ -13,9 +13,12 @@ namespace TUFMAN.DAL.Maps.Ves {
             Schema("ves");
 			Table("vessels");
 			Id(x => x.vessel_id).GeneratedBy.Identity().Column("vessel_id");
+            Map(x => x.gear_code).Column("gear_code").Length(1);
 			References(x => x.gears).Column("gear_code");
-			References(x => x.flag_code).Column("flag_code");
-			References(x => x.flag_conv_code).Column("flag_conv_code");
+            Map(x => x.flag_code).Column("flag_code").Length(2);
+			References(x => x.flag_country).Column("flag_code");
+            Map(x => x.flag_conv_code).Column("flag_conv_code").Length(2);
+    		References(x => x.flag_conv_country).Column("flag_conv_code");
 			Map(x => x.first_date).Column("first_date");
 			Map(x => x.last_date).Column("last_date");
 			Map(x => x.vessel_name).Column("vessel_name").Not.Nullable().Length(30);

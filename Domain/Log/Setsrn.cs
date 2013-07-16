@@ -7,20 +7,20 @@ namespace TUFMAN.Domain.Log {
     
     public class SetsRN {
         public SetsRN() { }
-        public int log_set_id { get; set; }
-        public TripsRN trips_rn { get; set; }
-        public ActivitycodesRN activitycodes_rn { get; set; }
-        public DateTime? logdate { get; set; }
-        public int? school_id { get; set; }
-        public DateTime? set_time { get; set; }
-        public DateTime? end_set_time { get; set; }
-        public string lat { get; set; }
-        public string lon { get; set; }
-        public string well_no { get; set; }
-        public string eez_code { get; set; }
-        public string set_time_x { get; set; }
-        public string subarea_id { get; set; }
-        public int? port_id { get; set; }
-        public bool? in_wcpfc_area { get; set; }
+        public virtual int log_set_id { get; set; }
+        public virtual TripsRN trips_rn { get; set; }
+        public virtual ActivitycodesRN activitycodes_rn { get; set; }
+        public virtual DateTime? logdate { get; set; }
+        public virtual int? school_id { get; set; }
+        public virtual DateTime? set_time { get; set; }
+        public virtual DateTime? end_set_time { get; set; }
+        public virtual string lat { get; set; }
+        public virtual string lon { get; set; }
+        public virtual string well_no { get; set; }
+        public virtual string eez_code { get; set; }
+        public virtual string set_time_x { get; set; }
+        public virtual string subarea_id { get; set; }
+        public virtual int? port_id { get; set; }
+        public virtual bool? in_wcpfc_area { get; set; }
     }
 }

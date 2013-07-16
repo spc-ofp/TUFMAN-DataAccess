@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace TUFMAN.Domain.Ref {
     
     public class ActivitycodesGN {
-        public int n_activity_id { get; set; }
-        public string activity_desc { get; set; }
+        public virtual int n_activity_id { get; set; }
+        public virtual string activity_desc { get; set; }
     }
 }

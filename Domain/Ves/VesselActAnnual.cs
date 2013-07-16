@@ -6,19 +6,19 @@ using TUFMAN.Domain.Ref;
 namespace TUFMAN.Domain.Ves {
     
     public class VesselActAnnual {
-        public int vess_act_id { get; set; }
-        public Vessels vessels { get; set; }
-        public VesselActivities vessel_activities { get; set; }
-        public int? log_trip_id { get; set; }
-        public int? unload_id { get; set; }
-        public int? yy { get; set; }
-        public DateTime? period_from { get; set; }
-        public DateTime? period_to { get; set; }
-        public bool logsheet { get; set; }
-        public string comments { get; set; }
-        public int? license_id { get; set; }
-        public int? sample_id { get; set; }
-        public int? recon_trip_id { get; set; }
-        public int? nat_fleet_id { get; set; }
+        public virtual int vess_act_id { get; set; }
+        public virtual Vessels vessels { get; set; }
+        public virtual VesselActivities vessel_activities { get; set; }
+        public virtual int? log_trip_id { get; set; }
+        public virtual int? unload_id { get; set; }
+        public virtual int? yy { get; set; }
+        public virtual DateTime? period_from { get; set; }
+        public virtual DateTime? period_to { get; set; }
+        public virtual bool logsheet { get; set; }
+        public virtual string comments { get; set; }
+        public virtual int? license_id { get; set; }
+        public virtual int? sample_id { get; set; }
+        public virtual int? recon_trip_id { get; set; }
+        public virtual int? nat_fleet_id { get; set; }
     }
 }

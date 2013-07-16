@@ -12,7 +12,7 @@ namespace TUFMAN.DAL.Maps.Log {
         public SetsGNMap() {
             Schema("log");
 			Table("sets_gn");
-			Id(x => x.log_set_id).GeneratedBy.Identity().Column("log_set_id");
+            Id(x => x.log_set_id).GeneratedBy.Identity().Column("log_set_id");
 			References(x => x.trips_gn).Column("log_trip_id");
 			References(x => x.activitycodes_gn).Column("n_activity_id");
 			Map(x => x.logdate).Column("logdate");

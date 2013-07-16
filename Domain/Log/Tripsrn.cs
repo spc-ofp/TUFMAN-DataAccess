@@ -7,36 +7,36 @@ namespace TUFMAN.Domain.Log {
     
     public class TripsRN {
         public TripsRN() { }
-        public int log_trip_id { get; set; }
-        public TripsRN trips_rnVal { get; set; }
-        public Vessels vessels { get; set; }
-        public int? license_id { get; set; }
-        public int? unload_id { get; set; }
-        public int? vess_act_id { get; set; }
-        public string flag_code { get; set; }
-        public int? ffa_vid { get; set; }
-        public string ircs { get; set; }
-        public string license_no { get; set; }
-        public short? trip_no { get; set; }
-        public int? fads_n { get; set; }
-        public string tender_vessel { get; set; }
-        public DateTime? first_logdate { get; set; }
-        public DateTime? last_logdate { get; set; }
-        public int? depart_port_id { get; set; }
-        public DateTime? depart_date { get; set; }
-        public DateTime? return_date { get; set; }
-        public int? return_port_id { get; set; }
-        public int? fish_start_mt { get; set; }
-        public int? fish_after_mt { get; set; }
-        public DateTime? entry_date { get; set; }
-        public string comments { get; set; }
-        public int? obs_trip_id { get; set; }
-        public int? sample_id { get; set; }
-        public int? nat_fleet_id { get; set; }
-        public bool eez_catch_only { get; set; }
-        public string entered_by { get; set; }
-        public string batch_code { get; set; }
-        public bool totals_checked { get; set; }
-        public int? first_logdate_yy { get; set; }
+        public virtual int log_trip_id { get; set; }
+        public virtual TripsRN trips_rnVal { get; set; }
+        public virtual Vessels vessels { get; set; }
+        public virtual int? license_id { get; set; }
+        public virtual int? unload_id { get; set; }
+        public virtual int? vess_act_id { get; set; }
+        public virtual string flag_code { get; set; }
+        public virtual int? ffa_vid { get; set; }
+        public virtual string ircs { get; set; }
+        public virtual string license_no { get; set; }
+        public virtual short? trip_no { get; set; }
+        public virtual int? fads_n { get; set; }
+        public virtual string tender_vessel { get; set; }
+        public virtual DateTime? first_logdate { get; set; }
+        public virtual DateTime? last_logdate { get; set; }
+        public virtual int? depart_port_id { get; set; }
+        public virtual DateTime? depart_date { get; set; }
+        public virtual DateTime? return_date { get; set; }
+        public virtual int? return_port_id { get; set; }
+        public virtual int? fish_start_mt { get; set; }
+        public virtual int? fish_after_mt { get; set; }
+        public virtual DateTime? entry_date { get; set; }
+        public virtual string comments { get; set; }
+        public virtual int? obs_trip_id { get; set; }
+        public virtual int? sample_id { get; set; }
+        public virtual int? nat_fleet_id { get; set; }
+        public virtual bool eez_catch_only { get; set; }
+        public virtual string entered_by { get; set; }
+        public virtual string batch_code { get; set; }
+        public virtual bool totals_checked { get; set; }
+        public virtual int? first_logdate_yy { get; set; }
     }
 }

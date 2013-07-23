@@ -8,11 +8,8 @@ namespace TUFMAN.Domain.Ves {
     public class Vessels {
         public Vessels() { }
         public virtual int vessel_id { get; set; }
-        public virtual string gear_code { get; set; }
         public virtual Gears gears { get; set; }
-        public virtual string flag_code { get; set; }
         public virtual Countries flag_country { get; set; }
-        public virtual string flag_conv_code { get; set; }
         public virtual Countries flag_conv_country { get; set; }
         public virtual DateTime? first_date { get; set; }
         public virtual DateTime? last_date { get; set; }

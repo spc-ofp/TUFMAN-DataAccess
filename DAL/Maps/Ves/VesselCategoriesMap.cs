@@ -12,7 +12,7 @@ namespace TUFMAN.DAL.Maps.Ves {
         public VesselCategoriesMap() {
             Schema("ves");
 			Table("vessel_categories");
-			Id(x => x.vessel_category_id).GeneratedBy.Identity().Column("vessel_category_id");
+			Id(x => x.vessel_category_code).GeneratedBy.Assigned().Column("vessel_category_code").Length(2);
 			Map(x => x.vessel_category_desc).Column("vessel_category_desc").Length(250);
         }
     }

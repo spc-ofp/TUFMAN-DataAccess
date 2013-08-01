@@ -14,6 +14,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Table("telex_codes");
 			Id(x => x.rpt_code).GeneratedBy.Assigned().Column("rpt_code");
 			Map(x => x.rpt_desc).Column("rpt_desc").Length(100);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

@@ -22,6 +22,8 @@ namespace TUFMAN.DAL.Maps.Log {
 			Map(x => x.yft_mt).Column("yft_mt").Precision(53);
 			Map(x => x.bet_mt).Column("bet_mt").Precision(53);
 			Map(x => x.mixed_mt).Column("mixed_mt").Precision(53);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

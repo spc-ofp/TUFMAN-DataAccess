@@ -30,7 +30,6 @@ namespace TUFMAN.DAL.Maps.Ves {
 			Map(x => x.owner_id).Column("owner_id").Precision(10);
 			Map(x => x.agent_id).Column("agent_id").Precision(10);
 			Map(x => x.captain_id).Column("captain_id").Precision(10);
-			Map(x => x.entry_date).Column("entry_date");
 			Map(x => x.fishmaster_id).Column("fishmaster_id").Precision(10);
 			Map(x => x.inactive).Column("inactive").Not.Nullable();
 			Map(x => x.win).Column("win").Length(10);
@@ -94,6 +93,8 @@ namespace TUFMAN.DAL.Maps.Ves {
 			Map(x => x.inmarsat_model).Column("inmarsat_model").Length(50);
 			Map(x => x.inmarsat_serial_no).Column("inmarsat_serial_no").Length(50);
 			Map(x => x.inmarsat_security_no).Column("inmarsat_security_no").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

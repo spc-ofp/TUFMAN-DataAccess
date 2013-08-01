@@ -22,5 +22,7 @@ namespace TUFMAN.Domain.Log {
         public virtual string subarea_id { get; set; }
         public virtual int? port_id { get; set; }
         public virtual bool? in_wcpfc_area { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

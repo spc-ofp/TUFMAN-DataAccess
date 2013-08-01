@@ -30,6 +30,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.low_len).Column("low_len").Precision(5);
 			Map(x => x.high_len).Column("high_len").Precision(5);
 			Map(x => x.max_len).Column("max_len").Precision(5);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

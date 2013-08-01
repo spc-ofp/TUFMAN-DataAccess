@@ -43,5 +43,7 @@ namespace TUFMAN.Domain.Ref {
         public virtual DateTime? kit_issue_date { get; set; }
         public virtual short? rating { get; set; }
         public virtual string entered_by { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

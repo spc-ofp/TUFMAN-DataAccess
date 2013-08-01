@@ -14,6 +14,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Table("field_staff_type");
 			Id(x => x.staff_type_id).GeneratedBy.Identity().Column("staff_type_id");
 			Map(x => x.staff_type).Column("staff_type").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

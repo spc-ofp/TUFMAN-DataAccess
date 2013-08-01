@@ -14,5 +14,7 @@ namespace TUFMAN.Domain.Ref {
         public virtual bool pna_member { get; set; }
         public virtual string iso3_code { get; set; }
         public virtual short? un_id { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

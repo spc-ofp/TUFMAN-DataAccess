@@ -22,7 +22,6 @@ namespace TUFMAN.Domain.Ves {
         public virtual int? owner_id { get; set; }
         public virtual int? agent_id { get; set; }
         public virtual int? captain_id { get; set; }
-        public virtual DateTime? entry_date { get; set; }
         public virtual int? fishmaster_id { get; set; }
         public virtual bool inactive { get; set; }
         public virtual string win { get; set; }
@@ -76,5 +75,7 @@ namespace TUFMAN.Domain.Ves {
         public virtual bool refrig_brinecacl { get; set; }
         public virtual string refrig_other { get; set; }
         public virtual int? boat_id { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

@@ -32,7 +32,6 @@ namespace TUFMAN.DAL.Maps.Log {
 			Map(x => x.return_date).Column("return_date");
 			Map(x => x.return_port_id).Column("return_port_id").Precision(10);
 			Map(x => x.target_sp_code).Column("target_sp_code").Length(3);
-			Map(x => x.entry_date).Column("entry_date");
 			Map(x => x.comments).Column("comments");
 			Map(x => x.obs_trip_id).Column("obs_trip_id").Precision(10);
 			Map(x => x.nat_fleet_id).Column("nat_fleet_id").Precision(10);
@@ -42,6 +41,8 @@ namespace TUFMAN.DAL.Maps.Log {
 			Map(x => x.totals_checked).Column("totals_checked").Not.Nullable();
 			Map(x => x.form_type_id).Column("form_type_id").Precision(10);
 			Map(x => x.first_logdate_yy).Column("first_logdate_yy").Precision(10);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

@@ -58,6 +58,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Maps\Audit\AuditedTablesMap.cs" />
+    <Compile Include="DAL\Maps\Audit\DeletedLogMap.cs" />
+    <Compile Include="DAL\Maps\Lic\ActivationsMap.cs" />
+    <Compile Include="DAL\Maps\Lic\AgrCorpFjMap.cs" />
+    <Compile Include="DAL\Maps\Lic\AgreementsMap.cs" />
+    <Compile Include="DAL\Maps\Lic\AgrLicProfileMap.cs" />
+    <Compile Include="DAL\Maps\Lic\AgrRepPeriodMap.cs" />
+    <Compile Include="DAL\Maps\Lic\ComplianceFjMap.cs" />
+    <Compile Include="DAL\Maps\Lic\LicenseHistoryMap.cs" />
+    <Compile Include="DAL\Maps\Lic\LicensesMap.cs" />
+    <Compile Include="DAL\Maps\Lic\NatFleetIafMap.cs" />
+    <Compile Include="DAL\Maps\Lic\NatFleetLicMap.cs" />
+    <Compile Include="DAL\Maps\Lic\NatFleetRegMap.cs" />
+    <Compile Include="DAL\Maps\Lic\NationalFleetsMap.cs" />
+    <Compile Include="DAL\Maps\Lic\PaymentsAgrMap.cs" />
+    <Compile Include="DAL\Maps\Lic\PaymentsLicMap.cs" />
+    <Compile Include="DAL\Maps\Lic\PaymentsRegMap.cs" />
+    <Compile Include="DAL\Maps\Lic\PositionReportsMap.cs" />
+    <Compile Include="DAL\Maps\Lic\ReceiptsMap.cs" />
+    <Compile Include="DAL\Maps\Lic\RegistrationsMap.cs" />
     <Compile Include="DAL\Maps\Log\CatchgnMap.cs" />
     <Compile Include="DAL\Maps\Log\CatchhlMap.cs" />
     <Compile Include="DAL\Maps\Log\CatchllMap.cs" />
@@ -92,6 +112,7 @@
     <Compile Include="DAL\Maps\Ref\FieldStaffMap.cs" />
     <Compile Include="DAL\Maps\Ref\FieldStaffTypeMap.cs" />
     <Compile Include="DAL\Maps\Ref\GearsMap.cs" />
+    <Compile Include="DAL\Maps\Ref\IafZonesMap.cs" />
     <Compile Include="DAL\Maps\Ref\LicenseStatusMap.cs" />
     <Compile Include="DAL\Maps\Ref\LicenseTypesMap.cs" />
     <Compile Include="DAL\Maps\Ref\ObserverTypesMap.cs" />
@@ -101,10 +122,44 @@
     <Compile Include="DAL\Maps\Ref\SpeciesRangesMap.cs" />
     <Compile Include="DAL\Maps\Ref\TelexCodesMap.cs" />
     <Compile Include="DAL\Maps\Ref\VesselActivitiesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\CompaniesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\CurrenciesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\FjArchMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\FjTerrMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\LicenseProfilesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\MarketPricesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\PasswordsMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\PaymentTypesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\ProfilesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\RegProfilesMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\SbAreasMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\SubareasMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\TripCoverageMap.cs" />
+    <Compile Include="DAL\Maps\Tufman\UserPreferencesMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselActAnnualMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselCategoriesMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselHistoryMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselsMap.cs" />
+    <Compile Include="Domain\Audit\AuditedTables.cs" />
+    <Compile Include="Domain\Audit\DeletedLog.cs" />
+    <Compile Include="Domain\Lic\Activations.cs" />
+    <Compile Include="Domain\Lic\AgrCorpFj.cs" />
+    <Compile Include="Domain\Lic\Agreements.cs" />
+    <Compile Include="Domain\Lic\AgrLicProfile.cs" />
+    <Compile Include="Domain\Lic\AgrRepPeriod.cs" />
+    <Compile Include="Domain\Lic\ComplianceFj.cs" />
+    <Compile Include="Domain\Lic\LicenseHistory.cs" />
+    <Compile Include="Domain\Lic\Licenses.cs" />
+    <Compile Include="Domain\Lic\NatFleetIaf.cs" />
+    <Compile Include="Domain\Lic\NatFleetLic.cs" />
+    <Compile Include="Domain\Lic\NatFleetReg.cs" />
+    <Compile Include="Domain\Lic\NationalFleets.cs" />
+    <Compile Include="Domain\Lic\PaymentsAgr.cs" />
+    <Compile Include="Domain\Lic\PaymentsLic.cs" />
+    <Compile Include="Domain\Lic\PaymentsReg.cs" />
+    <Compile Include="Domain\Lic\PositionReports.cs" />
+    <Compile Include="Domain\Lic\Receipts.cs" />
+    <Compile Include="Domain\Lic\Registrations.cs" />
     <Compile Include="Domain\Log\Catchgn.cs" />
     <Compile Include="Domain\Log\Catchhl.cs" />
     <Compile Include="Domain\Log\Catchll.cs" />
@@ -139,6 +194,7 @@
     <Compile Include="Domain\Ref\FieldStaff.cs" />
     <Compile Include="Domain\Ref\FieldStaffType.cs" />
     <Compile Include="Domain\Ref\Gears.cs" />
+    <Compile Include="Domain\Ref\IafZones.cs" />
     <Compile Include="Domain\Ref\LicenseStatus.cs" />
     <Compile Include="Domain\Ref\LicenseTypes.cs" />
     <Compile Include="Domain\Ref\ObserverTypes.cs" />
@@ -148,6 +204,20 @@
     <Compile Include="Domain\Ref\SpeciesRanges.cs" />
     <Compile Include="Domain\Ref\TelexCodes.cs" />
     <Compile Include="Domain\Ref\VesselActivities.cs" />
+    <Compile Include="Domain\Tufman\Companies.cs" />
+    <Compile Include="Domain\Tufman\Currencies.cs" />
+    <Compile Include="Domain\Tufman\FjArch.cs" />
+    <Compile Include="Domain\Tufman\FjTerr.cs" />
+    <Compile Include="Domain\Tufman\LicenseProfiles.cs" />
+    <Compile Include="Domain\Tufman\MarketPrices.cs" />
+    <Compile Include="Domain\Tufman\Passwords.cs" />
+    <Compile Include="Domain\Tufman\PaymentTypes.cs" />
+    <Compile Include="Domain\Tufman\Profiles.cs" />
+    <Compile Include="Domain\Tufman\RegProfiles.cs" />
+    <Compile Include="Domain\Tufman\SbAreas.cs" />
+    <Compile Include="Domain\Tufman\Subareas.cs" />
+    <Compile Include="Domain\Tufman\TripCoverage.cs" />
+    <Compile Include="Domain\Tufman\UserPreferences.cs" />
     <Compile Include="Domain\Ves\VesselActAnnual.cs" />
     <Compile Include="Domain\Ves\VesselCategories.cs" />
     <Compile Include="Domain\Ves\VesselHistory.cs" />
@@ -157,6 +227,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

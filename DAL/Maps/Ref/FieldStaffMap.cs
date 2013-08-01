@@ -49,6 +49,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.kit_issue_date).Column("kit_issue_date");
 			Map(x => x.rating).Column("rating").Precision(5);
 			Map(x => x.entered_by).Column("entered_by").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

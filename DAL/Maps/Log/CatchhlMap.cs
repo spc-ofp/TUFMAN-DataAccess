@@ -21,6 +21,8 @@ namespace TUFMAN.DAL.Maps.Log {
 			Map(x => x.sp_kg_est).Column("sp_kg_est").Precision(10);
 			Map(x => x.spdiscard_n).Column("spdiscard_n").Precision(5);
 			Map(x => x.est_meth_id).Column("est_meth_id").Precision(3);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

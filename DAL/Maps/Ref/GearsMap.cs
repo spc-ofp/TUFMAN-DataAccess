@@ -16,6 +16,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.gear_code_2).Column("gear_code_2").Length(2);
 			Map(x => x.gear_desc).Column("gear_desc").Length(30);
 			Map(x => x.mimra_type_code).Column("mimra_type_code").Length(1);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

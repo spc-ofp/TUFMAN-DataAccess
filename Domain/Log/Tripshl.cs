@@ -27,7 +27,6 @@ namespace TUFMAN.Domain.Log {
         public virtual int? return_port_id { get; set; }
         public virtual int? hk_bt_flt_n { get; set; }
         public virtual string target_sp_code { get; set; }
-        public virtual DateTime? entry_date { get; set; }
         public virtual string comments { get; set; }
         public virtual int? obs_trip_id { get; set; }
         public virtual int? nat_fleet_id { get; set; }
@@ -39,5 +38,7 @@ namespace TUFMAN.Domain.Log {
         public virtual int? handline_len_max { get; set; }
         public virtual bool totals_checked { get; set; }
         public virtual int? first_logdate_yy { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

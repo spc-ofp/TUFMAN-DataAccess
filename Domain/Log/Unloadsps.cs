@@ -17,5 +17,7 @@ namespace TUFMAN.Domain.Log {
         public virtual float? yft_mt { get; set; }
         public virtual float? bet_mt { get; set; }
         public virtual float? mixed_mt { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

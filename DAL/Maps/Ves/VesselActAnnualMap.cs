@@ -26,6 +26,8 @@ namespace TUFMAN.DAL.Maps.Ves {
 			Map(x => x.sample_id).Column("sample_id").Precision(10);
 			Map(x => x.recon_trip_id).Column("recon_trip_id").Precision(10);
 			Map(x => x.nat_fleet_id).Column("nat_fleet_id").Precision(10);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

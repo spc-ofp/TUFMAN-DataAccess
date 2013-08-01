@@ -24,6 +24,8 @@ namespace TUFMAN.DAL.Maps.Log {
 			Map(x => x.set_time_x).Column("set_time_x").Length(50);
 			Map(x => x.subarea_id).Column("subarea_id").Length(2);
 			Map(x => x.in_wcpfc_area).Column("in_wcpfc_area");
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

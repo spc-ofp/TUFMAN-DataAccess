@@ -15,6 +15,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Id(x => x.lic_status_id).GeneratedBy.Identity().Column("lic_status_id");
 			Map(x => x.lic_status_name).Column("lic_status_name").Length(50);
 			Map(x => x.lic_status_desc).Column("lic_status_desc").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

@@ -18,6 +18,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.location_code).Column("location_code").Length(5);
 			Map(x => x.port_lat).Column("port_lat").Length(9);
 			Map(x => x.port_lon).Column("port_lon").Length(10);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

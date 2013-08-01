@@ -14,6 +14,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Table("license_types");
 			Id(x => x.lic_type_id).GeneratedBy.Identity().Column("lic_type_id");
 			Map(x => x.lic_type_desc).Column("lic_type_desc").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

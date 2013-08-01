@@ -9,5 +9,7 @@ namespace TUFMAN.Domain.Ref {
         public virtual int agr_own_id { get; set; }
         public virtual string agr_own_desc { get; set; }
         public virtual string agr_own_longdesc { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

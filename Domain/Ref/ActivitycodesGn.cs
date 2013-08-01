@@ -8,5 +8,7 @@ namespace TUFMAN.Domain.Ref {
     public class ActivitycodesGN {
         public virtual int n_activity_id { get; set; }
         public virtual string activity_desc { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

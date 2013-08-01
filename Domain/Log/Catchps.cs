@@ -16,5 +16,7 @@ namespace TUFMAN.Domain.Log {
         public virtual decimal? est_meth_id { get; set; }
         public virtual bool discard { get; set; }
         public virtual string sizeclass { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

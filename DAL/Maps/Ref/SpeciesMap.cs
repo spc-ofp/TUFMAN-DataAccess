@@ -33,6 +33,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.sp_pict_file).Column("sp_pict_file").Length(15);
 			Map(x => x.last_update).Column("last_update");
 			Map(x => x.display_in_list).Column("display_in_list").Not.Nullable();
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

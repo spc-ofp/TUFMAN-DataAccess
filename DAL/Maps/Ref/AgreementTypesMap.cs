@@ -14,6 +14,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Table("agreement_types");
 			Id(x => x.agr_type_id).GeneratedBy.Identity().Column("agr_type_id");
 			Map(x => x.agr_type_desc).Column("agr_type_desc").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

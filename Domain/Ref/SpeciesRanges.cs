@@ -24,6 +24,8 @@ namespace TUFMAN.Domain.Ref {
         public virtual decimal? low_len { get; set; }
         public virtual decimal? high_len { get; set; }
         public virtual decimal? max_len { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
         #region NHibernate Composite Key Requirements
         public override bool Equals(object obj) {
 			if (obj == null) return false;

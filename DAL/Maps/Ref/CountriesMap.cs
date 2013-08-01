@@ -20,6 +20,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Map(x => x.pna_member).Column("pna_member").Not.Nullable();
 			Map(x => x.iso3_code).Column("iso3_code").Length(3);
 			Map(x => x.un_id).Column("un_id").Precision(5);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

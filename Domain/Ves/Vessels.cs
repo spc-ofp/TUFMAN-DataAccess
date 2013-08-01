@@ -22,7 +22,6 @@ namespace TUFMAN.Domain.Ves {
         public virtual int? owner_id { get; set; }
         public virtual int? agent_id { get; set; }
         public virtual int? captain_id { get; set; }
-        public virtual DateTime? entry_date { get; set; }
         public virtual int? fishmaster_id { get; set; }
         public virtual bool inactive { get; set; }
         public virtual string win { get; set; }
@@ -86,5 +85,7 @@ namespace TUFMAN.Domain.Ves {
         public virtual string inmarsat_model { get; set; }
         public virtual string inmarsat_serial_no { get; set; }
         public virtual string inmarsat_security_no { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

@@ -27,5 +27,7 @@ namespace TUFMAN.Domain.Ref {
         public virtual string sp_pict_file { get; set; }
         public virtual DateTime? last_update { get; set; }
         public virtual bool display_in_list { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

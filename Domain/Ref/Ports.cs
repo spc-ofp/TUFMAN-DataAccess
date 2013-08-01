@@ -12,5 +12,7 @@ namespace TUFMAN.Domain.Ref {
         public virtual string location_code { get; set; }
         public virtual string port_lat { get; set; }
         public virtual string port_lon { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

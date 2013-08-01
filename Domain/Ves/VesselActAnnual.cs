@@ -20,5 +20,7 @@ namespace TUFMAN.Domain.Ves {
         public virtual int? sample_id { get; set; }
         public virtual int? recon_trip_id { get; set; }
         public virtual int? nat_fleet_id { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

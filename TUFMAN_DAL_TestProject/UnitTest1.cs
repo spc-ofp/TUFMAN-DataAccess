@@ -36,7 +36,7 @@ namespace TUFMAN_DAL_Tests
             UnitOfWork unitOfWork = new UnitOfWork(NHibernateHelper.SessionFactory);
             Repository repo = new Repository(unitOfWork.Session);
 
-            flagList = repo.GetAll<TUFMAN.Domain.Log.TripsLL>().Select(x => new System.Collections.DictionaryEntry { Key = x.vessels.flag_code, Value = x.vessels.flag_country.country_name }).Distinct().OrderBy(x => x.Value).ToList();
+            flagList = repo.GetAll<TUFMAN.Domain.Log.TripsLL>().Select(x => new System.Collections.DictionaryEntry { Key = x.vessels.flag_country.country_code, Value = x.vessels.flag_country.country_name }).Distinct().OrderBy(x => x.Value).ToList();
             Assert.IsTrue( flagList.Count > 0);
             unitOfWork.Rollback();
         }

@@ -24,5 +24,7 @@ namespace TUFMAN.Domain.Log {
         public virtual bool? in_wcpfc_area { get; set; }
         public virtual DateTime? unload_time { get; set; }
         public virtual bool? fish_unloaded { get; set; }
+        public virtual DateTime? entered_date { get; set; }
+        public virtual DateTime? changed_date { get; set; }
     }
 }

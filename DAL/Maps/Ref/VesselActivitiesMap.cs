@@ -14,6 +14,8 @@ namespace TUFMAN.DAL.Maps.Ref {
 			Table("vessel_activities");
 			Id(x => x.activitylog_id).GeneratedBy.Identity().Column("activitylog_id");
 			Map(x => x.activity).Column("activity").Length(50);
+            Map(x => x.entered_date).Column("entered_date");
+            Map(x => x.changed_date).Column("changed_date");
         }
     }
 }

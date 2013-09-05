@@ -24,7 +24,7 @@ namespace TUFMAN_DAL_Tests.Configuration
         {
 
             NHibernate.Cfg.Configuration config = Fluently.Configure().
-                Database(MsSqlConfiguration.MsSql2008.ConnectionString("Server=NOUSQL50\\SQLEXPRESS;Database=tufman_ck;Trusted_Connection=True")).
+                Database(MsSqlConfiguration.MsSql2008.ConnectionString("Server=SPC122004-WIN7\\SQLEXPRESS;Database=tufman_mh;Trusted_Connection=True")).
                 Mappings(m => m.FluentMappings.AddFromAssemblyOf<VesselsMap>()).
                 CurrentSessionContext<ThreadStaticSessionContext>().
                 BuildConfiguration();

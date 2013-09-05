@@ -100,6 +100,9 @@
     <Compile Include="DAL\Maps\Log\TripsrnMap.cs" />
     <Compile Include="DAL\Maps\Log\TripstrMap.cs" />
     <Compile Include="DAL\Maps\Log\UnloadspsMap.cs" />
+    <Compile Include="DAL\Maps\Recon\ViewLogYyMmEezAllIDMap.cs" />
+    <Compile Include="DAL\Maps\Recon\ViewSamplesYyMmAllIDMap.cs" />
+    <Compile Include="DAL\Maps\Recon\ViewUnloadsYyMmAllIDMap.cs" />
     <Compile Include="DAL\Maps\Ref\ActivitycodesGnMap.cs" />
     <Compile Include="DAL\Maps\Ref\ActivitycodesHlMap.cs" />
     <Compile Include="DAL\Maps\Ref\ActivitycodesLlMap.cs" />
@@ -136,6 +139,7 @@
     <Compile Include="DAL\Maps\Tufman\SubareasMap.cs" />
     <Compile Include="DAL\Maps\Tufman\TripCoverageMap.cs" />
     <Compile Include="DAL\Maps\Tufman\UserPreferencesMap.cs" />
+    <Compile Include="DAL\Maps\Unload\UnloadingsPsMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselActAnnualMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselCategoriesMap.cs" />
     <Compile Include="DAL\Maps\Ves\VesselHistoryMap.cs" />
@@ -182,6 +186,9 @@
     <Compile Include="Domain\Log\Tripsrn.cs" />
     <Compile Include="Domain\Log\Tripstr.cs" />
     <Compile Include="Domain\Log\Unloadsps.cs" />
+    <Compile Include="Domain\Recon\ViewLogYyMmEezAllID.cs" />
+    <Compile Include="Domain\Recon\ViewSamplesYyMmAllID.cs" />
+    <Compile Include="Domain\Recon\ViewUnloadsYyMmAllID.cs" />
     <Compile Include="Domain\Ref\ActivitycodesGn.cs" />
     <Compile Include="Domain\Ref\ActivitycodesHl.cs" />
     <Compile Include="Domain\Ref\ActivitycodesLl.cs" />
@@ -218,6 +225,7 @@
     <Compile Include="Domain\Tufman\Subareas.cs" />
     <Compile Include="Domain\Tufman\TripCoverage.cs" />
     <Compile Include="Domain\Tufman\UserPreferences.cs" />
+    <Compile Include="Domain\Unload\UnloadingsPs.cs" />
     <Compile Include="Domain\Ves\VesselActAnnual.cs" />
     <Compile Include="Domain\Ves\VesselCategories.cs" />
     <Compile Include="Domain\Ves\VesselHistory.cs" />
